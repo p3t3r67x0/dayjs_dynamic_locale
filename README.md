@@ -1,2 +1,3 @@
-# dayjs_dynamic_locale
-Plugin to load dynamic locale for dayjs
+# dayjs-dynamic-locale
+
+> Plugin to load dynamic locale for dayjs

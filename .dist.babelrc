@@ -1,9 +1,0 @@
-{
-  "presets": [
-    ["@babel/env", {
-      "targets": {
-        "browsers": ["extends @ladjs/browserslist-config"]
-      }
-    }]
-  ]
-}

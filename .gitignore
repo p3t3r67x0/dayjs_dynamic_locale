@@ -1,3 +1,6 @@
+/esm
+/index.d.ts
+/types.d.ts
 node_modules
-dist
-lib
+*.min.js
+*.umd
