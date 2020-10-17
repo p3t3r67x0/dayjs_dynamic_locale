@@ -1,6 +1,5 @@
-/esm
-/index.d.ts
-/types.d.ts
 node_modules
-*.min.js
-*.umd
+/lib
+/*.min.js
+/*.d.ts
+/*.umd

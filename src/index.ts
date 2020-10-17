@@ -1,5 +1,5 @@
-function extendLocaleFn(orgFn) {
-  return function(...args) {
+function extendLocaleFn(orgFn: any) {
+  return function(...args: any) {
     if (typeof args[0] === 'string' && args.length === 1) {
       try {
         require(`dayjs/locale/${args[0]}`)
@@ -12,7 +12,7 @@ function extendLocaleFn(orgFn) {
   }
 }
 
-export default (option, dayjsClass, dayjsFactory) => {
+export default (option: any, dayjsClass: any, dayjsFactory: any) => {
   dayjsFactory.locale = extendLocaleFn(dayjsFactory.locale)
   dayjsClass.prototype.locale = extendLocaleFn(dayjsClass.prototype.locale)
 }
