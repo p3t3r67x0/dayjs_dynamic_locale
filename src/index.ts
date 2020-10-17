@@ -1,3 +1,5 @@
+/// <reference path="../node_modules/dayjs/esm/index.d.ts" />
+
 function extendLocaleFn(orgFn: any) {
   return function(...args: any) {
     if (typeof args[0] === 'string' && args.length === 1) {

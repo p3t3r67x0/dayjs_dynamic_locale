@@ -2,19 +2,20 @@
   "name": "dayjs-dynamic-locale",
   "main": "lib/index.js",
   "types": "lib",
-  "module": "dayjs-dynamic-locale.min.js",
-  "version": "0.0.4",
+  "module": "lib/dayjs-dynamic-locale.min.js",
+  "version": "0.0.5",
   "scripts": {
     "tsc": "tsc -p .",
     "babel": "cross-env BABEL_ENV=build babel src --out-dir esm --copy-files && node build/esm",
     "build": "cross-env BABEL_ENV=build node build && npm run size",
-    "size": "size-limit && gzip-size dayjs-dynamic-locale.min.js"
+    "size": "size-limit && gzip-size lib/dayjs-dynamic-locale.min.js"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@rollup/plugin-babel": "^5.2.1",
     "@size-limit/preset-small-lib": "^4.6.0",
     "cross-env": "^7.0.2",
+    "dayjs": "^1.9.3",
     "gzip-size-cli": "^3.0.0",
     "ncp": "^2.0.0",
     "rollup": "^2.32.0",
@@ -25,13 +26,13 @@
   "size-limit": [
     {
       "limit": "2.50 KB",
-      "path": "dayjs-dynamic-locale.min.js"
+      "path": "lib/dayjs-dynamic-locale.min.js"
     }
   ],
   "engines": {
     "node": ">=14.12.0"
   },
-  "unpkg": "dist/dayjs-dynamic-locale.min.js",
+  "unpkg": "lib/dayjs-dynamic-locale.min.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/p3t3r67x0/dayjs_dynamic_locale.git"
@@ -48,5 +49,8 @@
     "url": "https://github.com/p3t3r67x0/dayjs_dynamic_locale/issues"
   },
   "homepage": "https://github.com/p3t3r67x0/dayjs_dynamic_locale#readme",
-  "description": "Plugin to load dynamic locales for dayjs"
+  "description": "Plugin to load dynamic locales for dayjs",
+  "peerDependencies": {
+    "dayjs": "^1.9.3"
+  }
 }
