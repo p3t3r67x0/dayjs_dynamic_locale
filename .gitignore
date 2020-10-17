@@ -1,5 +1,4 @@
 node_modules
-/lib
 /*.min.js
 /*.d.ts
-/*.umd
+/*.js

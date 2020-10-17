@@ -1,10 +1,8 @@
-/// <reference path="../node_modules/dayjs/esm/index.d.ts" />
-
 function extendLocaleFn(orgFn: any) {
   return function(...args: any) {
     if (typeof args[0] === 'string' && args.length === 1) {
       try {
-        require(`dayjs/locale/${args[0]}`)
+        require(`dayjs/locale/${args[0]}.js`)
       } catch (e) {
         console.debug(e)
       }
